@@ -242,7 +242,6 @@ class PentestAgent:
             state = self.state_manager.get_current_state()
             reward = self._calculate_reward()
             
-            # Update the RL agent
             self.rl_agent.update_model(state, reward)
             
             # Optimize strategy

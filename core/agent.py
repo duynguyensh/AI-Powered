@@ -126,7 +126,6 @@ class PentestAgent:
             
             privilege_results = self._run_privilege_escalation()
             
-            # Compile results
             self.test_results = {
                 "target": self.current_target.hostname,
                 "timestamp": time.time(),

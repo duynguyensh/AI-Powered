@@ -255,7 +255,6 @@ class PentestAgent:
         
         reward += 10.0
         
-        # Reward for successful reconnaissance
         if self.test_results.get("reconnaissance", {}).get("successful_attempts", 0) > 0:
             reward += 5.0
         

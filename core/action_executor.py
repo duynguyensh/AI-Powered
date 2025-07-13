@@ -118,7 +118,6 @@ class ActionExecutor:
                 for cmd in commands
             }
             
-            # Collect results as they complete
             for future in as_completed(future_to_command):
                 try:
                     result = future.result()

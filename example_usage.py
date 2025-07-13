@@ -55,7 +55,6 @@ def main():
     except Exception as e:
         logger.error(f"Focused testing failed: {e}")
     
-    # Example 3: Get AI agent performance stats
     logger.info("\n=== Example 3: AI Agent Statistics ===")
     try:
         stats = agent.rl_agent.get_performance_stats()

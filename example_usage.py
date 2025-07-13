@@ -69,7 +69,6 @@ def main():
     except Exception as e:
         logger.error(f"Failed to get AI stats: {e}")
     
-    # Example 4: Safety manager demonstration
     logger.info("\n=== Example 4: Safety Features ===")
     try:
         safety_summary = agent.safety_manager.get_safety_summary()

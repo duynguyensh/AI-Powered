@@ -30,7 +30,6 @@ class SafetyManager:
         self.emergency_stop_active = False
         self.emergency_stop_time = None
         
-        # Audit log
         self.audit_log = []
         
         self.logger = logger

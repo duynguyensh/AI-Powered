@@ -18,7 +18,6 @@ class StrategyOptimizer:
         """Optimize strategy based on test results"""
         self.logger.info("Optimizing strategy based on test results")
         
-        # Analyze results and adjust weights
         success_rate = test_results.get("success_rate", 0)
         
         if success_rate > 0.8:

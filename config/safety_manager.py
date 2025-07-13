@@ -133,7 +133,6 @@ class SafetyManager:
             self._log_audit_event("rate_limit_exceeded", target, f"Limit: {max_requests}/min")
             return False
         
-        # Increment counter
         self.request_counts[target] += 1
         return True
     

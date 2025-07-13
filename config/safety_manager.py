@@ -124,7 +124,6 @@ class SafetyManager:
             self.request_counts[target] = 0
             self.last_request_time[target] = current_time
         
-        # Reset counter if minute has passed
         if current_time - self.last_request_time[target] >= 60:
             self.request_counts[target] = 0
             self.last_request_time[target] = current_time

@@ -21,7 +21,6 @@ class StrategyOptimizer:
         success_rate = test_results.get("success_rate", 0)
         
         if success_rate > 0.8:
-            # High success rate - reduce exploration
             self._adjust_weights_for_success()
         elif success_rate < 0.2:
             # Low success rate - increase exploration

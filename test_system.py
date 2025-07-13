@@ -93,7 +93,6 @@ def test_basic_functionality():
         with open("config/config.yaml", "r") as f:
             config = yaml.safe_load(f)
         
-        # Test safety manager initialization
         from config.safety_manager import SafetyManager
         safety_manager = SafetyManager(config)
         

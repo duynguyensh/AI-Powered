@@ -94,7 +94,6 @@ def main():
     print("AI-Powered Penetration Testing Agent - Installation")
     print("=" * 60)
     
-    # Create directories
     print("\n1. Creating directories...")
     create_directories()
     

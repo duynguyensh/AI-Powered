@@ -27,7 +27,6 @@ class SafetyManager:
         self.request_counts = {}
         self.last_request_time = {}
         
-        # Emergency stop
         self.emergency_stop_active = False
         self.emergency_stop_time = None
         

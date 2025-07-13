@@ -43,7 +43,6 @@ def main():
     
     logger.info("\n=== Example 2: Focused Testing ===")
     try:
-        # Run focused reconnaissance
         focused_results = agent.recon_engine.run_focused_recon(
             target, 
             focus_areas=["dns", "web"]

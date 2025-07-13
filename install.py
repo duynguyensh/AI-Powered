@@ -107,7 +107,6 @@ def main():
         print("Installation failed at configuration setup step")
         sys.exit(1)
     
-    # Verify installation
     print("\n4. Verifying installation...")
     if not verify_installation():
         print("Installation verification failed")

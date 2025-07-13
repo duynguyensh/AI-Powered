@@ -53,7 +53,6 @@ class SafetyManager:
             self._log_audit_event("authorization_verified", target, "Target in authorized list")
             return True
         
-        # Check for authorization token
         if target in self.authorization_tokens:
             token = self.authorization_tokens[target]
             if self._verify_token(token):

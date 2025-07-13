@@ -7,7 +7,6 @@ import sys
 import os
 from pathlib import Path
 
-# Add the project root to the path
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 

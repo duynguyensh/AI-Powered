@@ -183,7 +183,6 @@ class SafetyManager:
         if target.startswith(("192.168.", "10.", "172.")):
             validation_results["warnings"].append("Private IP range detected")
         
-        # Check for common test domains
         test_domains = ["example.com", "test.com", "localhost", "127.0.0.1"]
         if target in test_domains:
             validation_results["warnings"].append("Test domain detected")

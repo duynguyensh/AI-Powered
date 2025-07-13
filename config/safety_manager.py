@@ -128,7 +128,6 @@ class SafetyManager:
             self.request_counts[target] = 0
             self.last_request_time[target] = current_time
         
-        # Check if limit exceeded
         if self.request_counts[target] >= max_requests:
             self.logger.warning(f"Rate limit exceeded for target: {target}")
             self._log_audit_event("rate_limit_exceeded", target, f"Limit: {max_requests}/min")

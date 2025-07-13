@@ -56,7 +56,6 @@ class ActionExecutor:
             with self.process_lock:
                 self.active_processes[process.pid] = process
             
-            # Wait for completion with timeout
             try:
                 stdout, stderr = process.communicate(timeout=timeout)
                 exit_code = process.returncode

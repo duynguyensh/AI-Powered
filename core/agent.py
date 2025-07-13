@@ -185,7 +185,6 @@ class PentestAgent:
         """Execute exploitation phase"""
         logger.info("Starting exploitation phase")
         
-        # Get current state for AI decision making
         current_state = self.state_manager.get_current_state()
         
         # Use RL agent to select optimal exploitation strategy

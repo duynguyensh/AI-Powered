@@ -281,7 +281,6 @@ class ActionExecutor:
         if scan_type == "web":
             command = ["nikto", "-h", target]
         else:
-            # Basic network vulnerability scan
             command = ["nmap", "--script", "vuln", target]
         
         result = self.execute_command(command, timeout=900)

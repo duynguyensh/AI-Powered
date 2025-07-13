@@ -243,7 +243,6 @@ class PentestAgent:
             
             self.rl_agent.update_model(state, reward)
             
-            # Optimize strategy
             self.strategy_optimizer.optimize_strategy(self.test_results)
             
             logger.info("AI model updated with test results")

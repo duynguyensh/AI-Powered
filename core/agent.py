@@ -238,7 +238,6 @@ class PentestAgent:
     def _update_ai_model(self):
         """Update the reinforcement learning model with test results"""
         try:
-            # Prepare training data from test results
             state = self.state_manager.get_current_state()
             reward = self._calculate_reward()
             

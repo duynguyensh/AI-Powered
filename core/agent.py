@@ -159,7 +159,6 @@ class PentestAgent:
         if recon_results.get("services"):
             self.current_target.services = recon_results["services"]
         
-        # Record in attack path
         self.attack_path.append({
             "phase": "reconnaissance",
             "timestamp": time.time(),

@@ -180,7 +180,6 @@ class SafetyManager:
         if target in ["localhost", "127.0.0.1", "::1"]:
             validation_results["warnings"].append("Testing localhost - ensure this is intended")
         
-        # Check for common private IP ranges
         if target.startswith(("192.168.", "10.", "172.")):
             validation_results["warnings"].append("Private IP range detected")
         

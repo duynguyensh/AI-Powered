@@ -23,7 +23,6 @@ class StrategyOptimizer:
         if success_rate > 0.8:
             self._adjust_weights_for_success()
         elif success_rate < 0.2:
-            # Low success rate - increase exploration
             self._adjust_weights_for_failure()
         
         self.logger.info("Strategy optimization completed")

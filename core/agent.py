@@ -194,7 +194,6 @@ class PentestAgent:
             exploit_strategy
         )
         
-        # Record in attack path
         self.attack_path.append({
             "phase": "exploitation",
             "timestamp": time.time(),

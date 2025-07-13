@@ -64,7 +64,6 @@ class ActionExecutor:
                 stdout, stderr = process.communicate()
                 exit_code = -1
             
-            # Remove from active processes
             with self.process_lock:
                 self.active_processes.pop(process.pid, None)
             

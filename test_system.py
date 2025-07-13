@@ -89,7 +89,6 @@ def test_basic_functionality():
     print("\nTesting basic functionality...")
     
     try:
-        # Test configuration loading
         import yaml
         with open("config/config.yaml", "r") as f:
             config = yaml.safe_load(f)

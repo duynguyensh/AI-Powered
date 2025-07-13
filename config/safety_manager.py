@@ -177,7 +177,6 @@ class SafetyManager:
             "errors": []
         }
         
-        # Check for localhost/private IPs
         if target in ["localhost", "127.0.0.1", "::1"]:
             validation_results["warnings"].append("Testing localhost - ensure this is intended")
         

@@ -52,7 +52,6 @@ class PentestAgent:
         self.config = self._load_config(config_path)
         self.safety_manager = SafetyManager(self.config)
         
-        # Initialize core components
         self.state_manager = StateManager()
         self.action_executor = ActionExecutor()
         

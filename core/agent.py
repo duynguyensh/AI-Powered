@@ -264,7 +264,6 @@ class PentestAgent:
         if self.test_results.get("exploitation", {}).get("successful_exploits", 0) > 0:
             reward += 20.0
         
-        # Reward for privilege escalation
         if self.test_results.get("privilege_escalation", {}).get("escalation_successful", False):
             reward += 30.0
         

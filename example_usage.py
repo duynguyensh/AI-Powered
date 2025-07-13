@@ -19,7 +19,6 @@ def main():
     """Main example function"""
     logger.info("AI-Powered Penetration Testing Agent - Example Usage")
     
-    # Initialize the agent
     try:
         agent = PentestAgent("config/config.yaml")
         logger.info("Agent initialized successfully")

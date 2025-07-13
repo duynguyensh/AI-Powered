@@ -1,0 +1,109 @@
+# AI-Powered Penetration Testing Agent Configuration
+
+# Safety and Ethics Settings
+safety:
+  require_authorization: true
+  max_scan_intensity: "medium"  # low, medium, high
+  rate_limiting: true
+  max_requests_per_minute: 60
+  emergency_stop_enabled: true
+  safe_mode: true  # Non-destructive testing only
+  
+# AI and Machine Learning Settings
+ai:
+  rl_learning_rate: 0.0003
+  exploration_rate: 0.1
+  model_update_frequency: 100
+  memory_size: 10000
+  batch_size: 64
+  gamma: 0.99  # Discount factor
+  tau: 0.005   # Target network update rate
+  
+# Testing Scope Configuration
+scope:
+  web_application: true
+  network_infrastructure: true
+  api_testing: true
+  database_testing: true
+  social_engineering: false
+  physical_security: false
+  wireless_networks: false
+  
+# Reconnaissance Settings
+reconnaissance:
+  port_scanning: true
+  service_detection: true
+  os_detection: true
+  web_crawling: true
+  subdomain_enumeration: true
+  dns_enumeration: true
+  whois_lookup: true
+  
+# Vulnerability Scanning
+vulnerability:
+  web_vulnerabilities: true
+  network_vulnerabilities: true
+  misconfigurations: true
+  weak_credentials: true
+  outdated_software: true
+  
+# Exploitation Settings
+exploitation:
+  automated_exploits: true
+  custom_payloads: true
+  privilege_escalation: true
+  persistence_mechanisms: false  # Disabled by default for safety
+  
+# Reporting Configuration
+reporting:
+  generate_html: true
+  generate_pdf: true
+  include_screenshots: true
+  include_payloads: false  # For safety
+  executive_summary: true
+  technical_details: true
+  remediation_advice: true
+  
+# Database Configuration
+database:
+  type: "sqlite"  # sqlite, postgresql, mysql
+  path: "data/pentest.db"
+  backup_enabled: true
+  
+# Logging Configuration
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  file_logging: true
+  log_file: "logs/pentest_agent.log"
+  max_log_size: "10MB"
+  log_retention: 30  # days
+  
+# API Configuration
+api:
+  host: "127.0.0.1"
+  port: 8000
+  debug: false
+  cors_enabled: true
+  rate_limit: 100  # requests per minute
+  
+# Target Configuration
+target:
+  default_timeout: 30
+  max_redirects: 5
+  user_agent: "AI-Pentest-Agent/1.0"
+  verify_ssl: false  # For testing purposes
+  
+# Reinforcement Learning Environment
+rl_environment:
+  max_steps: 1000
+  reward_success: 100
+  reward_failure: -10
+  reward_discovery: 5
+  reward_escalation: 50
+  
+# Attack Strategy Weights
+strategy_weights:
+  reconnaissance: 0.2
+  vulnerability_scanning: 0.3
+  exploitation: 0.4
+  privilege_escalation: 0.1 

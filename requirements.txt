@@ -18,7 +18,6 @@ webdriver-manager>=4.0.0
 psutil>=5.9.0
 subprocess32>=3.5.4
 
-# Data processing and visualization
 pandas>=2.0.0
 matplotlib>=3.7.0
 seaborn>=0.12.0

@@ -267,7 +267,6 @@ class PentestAgent:
         if self.test_results.get("privilege_escalation", {}).get("escalation_successful", False):
             reward += 30.0
         
-        # Penalty for failures
         total_failures = sum([
             self.test_results.get("reconnaissance", {}).get("failed_attempts", 0),
             self.test_results.get("vulnerability_scanning", {}).get("failed_scans", 0),

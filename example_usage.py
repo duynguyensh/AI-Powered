@@ -83,7 +83,6 @@ def main():
     
     logger.info("\n=== Example 5: Report Generation ===")
     try:
-        # Create a mock test result for demonstration
         mock_results = {
             "target": "example.com",
             "timestamp": 1234567890,

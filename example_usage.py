@@ -30,7 +30,6 @@ def main():
     try:
         target = agent.set_target("example.com", scope=["web"])
         
-        # Run reconnaissance only
         recon_results = agent.recon_engine.run_comprehensive_recon(target)
         
         logger.info(f"Reconnaissance completed:")

@@ -258,7 +258,6 @@ class PentestAgent:
         if self.test_results.get("reconnaissance", {}).get("successful_attempts", 0) > 0:
             reward += 5.0
         
-        # Reward for finding vulnerabilities
         vuln_count = len(self.test_results.get("vulnerabilities", {}).get("found_vulnerabilities", []))
         reward += vuln_count * 2.0
         

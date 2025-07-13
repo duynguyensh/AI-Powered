@@ -63,7 +63,6 @@ class PentestAgent:
         self.rl_agent = RLAgent(self.config)
         self.strategy_optimizer = StrategyOptimizer(self.config)
         
-        # Initialize reporting
         self.report_generator = ReportGenerator(self.config)
         
         # Test state

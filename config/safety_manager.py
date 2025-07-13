@@ -24,7 +24,6 @@ class SafetyManager:
         self.authorized_targets = set()
         self.authorization_tokens = {}
         
-        # Rate limiting
         self.request_counts = {}
         self.last_request_time = {}
         

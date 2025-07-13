@@ -28,7 +28,6 @@ def main():
     
     logger.info("\n=== Example 1: Basic Reconnaissance ===")
     try:
-        # Set target (use a test domain)
         target = agent.set_target("example.com", scope=["web"])
         
         # Run reconnaissance only

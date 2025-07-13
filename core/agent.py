@@ -112,7 +112,6 @@ class PentestAgent:
         if not self.current_target:
             raise ValueError("No target specified. Use set_target() first.")
         
-        # Safety check
         if not self.safety_manager.verify_authorization(self.current_target.hostname):
             raise PermissionError("Authorization required for target testing")
         

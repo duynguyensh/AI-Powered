@@ -21,7 +21,6 @@ class SafetyManager:
         self.config = config
         self.safety_config = config.get("safety", {})
         
-        # Authorization tracking
         self.authorized_targets = set()
         self.authorization_tokens = {}
         

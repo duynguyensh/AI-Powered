@@ -237,7 +237,6 @@ class ActionExecutor:
         
         result = self.execute_command(command, timeout=600)
         
-        # Parse nmap output
         if result["success"]:
             result["parsed_ports"] = self._parse_nmap_output(result["stdout"])
         

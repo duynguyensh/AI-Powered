@@ -64,7 +64,6 @@ def verify_installation():
     """Verify the installation"""
     print("Verifying installation...")
     
-    # Check if main modules can be imported
     try:
         import core.agent
         print("✓ Core agent module imported successfully")

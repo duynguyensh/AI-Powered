@@ -59,7 +59,6 @@ class SafetyManager:
                 self._log_audit_event("authorization_verified", target, "Valid token provided")
                 return True
         
-        # If authorization is required, deny access
         if self.safety_config.get("require_authorization", True):
             self.logger.warning(f"Authorization required for target: {target}")
             self._log_audit_event("authorization_denied", target, "No valid authorization")

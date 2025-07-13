@@ -102,7 +102,6 @@ def main():
         print("Installation failed at dependency installation step")
         sys.exit(1)
     
-    # Setup configuration
     print("\n3. Setting up configuration...")
     if not setup_configuration():
         print("Installation failed at configuration setup step")

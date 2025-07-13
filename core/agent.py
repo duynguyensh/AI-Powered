@@ -65,7 +65,6 @@ class PentestAgent:
         
         self.report_generator = ReportGenerator(self.config)
         
-        # Test state
         self.current_target: Optional[TestTarget] = None
         self.test_results: Dict[str, Any] = {}
         self.attack_path: List[Dict[str, Any]] = []

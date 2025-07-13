@@ -26,7 +26,6 @@ def main():
         logger.error(f"Failed to initialize agent: {e}")
         return
     
-    # Example 1: Basic reconnaissance only
     logger.info("\n=== Example 1: Basic Reconnaissance ===")
     try:
         # Set target (use a test domain)

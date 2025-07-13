@@ -34,7 +34,6 @@ def install_dependencies():
         subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", "requirements_simple.txt"])
         print("✓ Core dependencies installed successfully")
         
-        # Try additional dependencies if needed
         try:
             print("Installing additional dependencies...")
             subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", "requirements.txt"])

@@ -253,7 +253,6 @@ class PentestAgent:
         """Calculate reward for the RL agent based on test results"""
         reward = 0.0
         
-        # Base reward for completing the test
         reward += 10.0
         
         # Reward for successful reconnaissance

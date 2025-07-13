@@ -176,7 +176,6 @@ class PentestAgent:
         
         vuln_results = self.vuln_scanner.scan_target(self.current_target)
         
-        # Record in attack path
         self.attack_path.append({
             "phase": "vulnerability_scanning",
             "timestamp": time.time(),

@@ -55,7 +55,6 @@ class PentestAgent:
         self.state_manager = StateManager()
         self.action_executor = ActionExecutor()
         
-        # Initialize testing modules
         self.recon_engine = ReconnaissanceEngine(self.config)
         self.vuln_scanner = VulnerabilityScanner(self.config)
         self.exploit_engine = ExploitEngine(self.config)

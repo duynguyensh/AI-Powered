@@ -187,7 +187,6 @@ class PentestAgent:
         
         current_state = self.state_manager.get_current_state()
         
-        # Use RL agent to select optimal exploitation strategy
         exploit_strategy = self.rl_agent.select_action(current_state)
         
         exploit_results = self.exploit_engine.execute_exploits(

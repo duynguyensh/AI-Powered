@@ -43,7 +43,6 @@ class ActionExecutor:
         try:
             self.logger.debug(f"Executing command: {' '.join(command)}")
             
-            # Execute the command
             if capture_output:
                 process = subprocess.Popen(
                     command,

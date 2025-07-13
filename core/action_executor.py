@@ -113,7 +113,6 @@ class ActionExecutor:
         results = []
         
         with ThreadPoolExecutor(max_workers=self.max_workers) as executor:
-            # Submit all commands
             future_to_command = {
                 executor.submit(self.execute_command, cmd, timeout): cmd 
                 for cmd in commands

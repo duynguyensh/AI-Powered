@@ -211,7 +211,6 @@ class PentestAgent:
             self.current_target
         )
         
-        # Record in attack path
         self.attack_path.append({
             "phase": "privilege_escalation",
             "timestamp": time.time(),

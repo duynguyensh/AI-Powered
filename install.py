@@ -52,7 +52,6 @@ def setup_configuration():
     """Set up configuration files"""
     print("Setting up configuration...")
     
-    # Check if config file exists
     if not os.path.exists("config/config.yaml"):
         print("✓ Configuration file already exists")
     else:

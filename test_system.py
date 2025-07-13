@@ -96,7 +96,6 @@ def test_basic_functionality():
         from config.safety_manager import SafetyManager
         safety_manager = SafetyManager(config)
         
-        # Test basic safety functions
         summary = safety_manager.get_safety_summary()
         if isinstance(summary, dict):
             print("✓ Safety manager working correctly")

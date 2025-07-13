@@ -187,7 +187,6 @@ class SafetyManager:
         if target in test_domains:
             validation_results["warnings"].append("Test domain detected")
         
-        # Check for potentially dangerous targets
         dangerous_patterns = ["prod", "production", "live", "critical"]
         if any(pattern in target.lower() for pattern in dangerous_patterns):
             validation_results["warnings"].append("Potentially production target detected")

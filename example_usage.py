@@ -112,7 +112,6 @@ def main():
             "success_rate": 0.75
         }
         
-        # Generate report
         report_path = agent.report_generator.generate_report(
             mock_results,
             [],

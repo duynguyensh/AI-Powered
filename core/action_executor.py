@@ -53,7 +53,6 @@ class ActionExecutor:
             else:
                 process = subprocess.Popen(command)
             
-            # Track the process
             with self.process_lock:
                 self.active_processes[process.pid] = process
             

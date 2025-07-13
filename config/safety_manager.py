@@ -65,7 +65,6 @@ class SafetyManager:
             self._log_audit_event("authorization_denied", target, "No valid authorization")
             return False
         
-        # If authorization not required, allow with warning
         self.logger.warning(f"No authorization provided for target: {target} - proceeding with caution")
         self._log_audit_event("authorization_bypassed", target, "Authorization not required")
         return True

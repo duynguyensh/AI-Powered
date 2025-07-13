@@ -41,7 +41,6 @@ def main():
     except Exception as e:
         logger.error(f"Reconnaissance failed: {e}")
     
-    # Example 2: Focused testing on specific areas
     logger.info("\n=== Example 2: Focused Testing ===")
     try:
         # Run focused reconnaissance

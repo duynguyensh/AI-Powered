@@ -119,7 +119,6 @@ class PentestAgent:
         logger.info(f"Starting autonomous penetration test on {self.current_target.hostname}")
         
         try:
-            # Phase 1: Reconnaissance
             recon_results = self._run_reconnaissance()
             
             # Phase 2: Vulnerability Assessment

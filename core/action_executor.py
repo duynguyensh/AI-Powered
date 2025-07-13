@@ -279,7 +279,6 @@ class ActionExecutor:
             Dictionary with scan results
         """
         if scan_type == "web":
-            # Web application vulnerability scan
             command = ["nikto", "-h", target]
         else:
             # Basic network vulnerability scan

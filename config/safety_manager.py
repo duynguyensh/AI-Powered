@@ -204,7 +204,6 @@ class SafetyManager:
         
         self.audit_log.append(audit_entry)
         
-        # Keep only last 1000 entries
         if len(self.audit_log) > 1000:
             self.audit_log = self.audit_log[-1000:]
     

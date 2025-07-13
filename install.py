@@ -97,7 +97,6 @@ def main():
     print("\n1. Creating directories...")
     create_directories()
     
-    # Install dependencies
     print("\n2. Installing dependencies...")
     if not install_dependencies():
         print("Installation failed at dependency installation step")

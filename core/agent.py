@@ -137,7 +137,6 @@ class PentestAgent:
                 "success_rate": self._calculate_success_rate()
             }
             
-            # Update AI model with results
             self._update_ai_model()
             
             logger.info("Autonomous penetration test completed successfully")

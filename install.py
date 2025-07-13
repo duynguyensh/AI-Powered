@@ -30,7 +30,6 @@ def install_dependencies():
     print("Installing Python dependencies...")
     
     try:
-        # Try simplified requirements first
         print("Installing core dependencies...")
         subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", "requirements_simple.txt"])
         print("✓ Core dependencies installed successfully")

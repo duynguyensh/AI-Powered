@@ -317,7 +317,6 @@ class PentestAgent:
         
         self.action_executor.stop_all_processes()
         
-        # Save current state
         self.state_manager.save_state()
         
         logger.info("Emergency stop completed") 

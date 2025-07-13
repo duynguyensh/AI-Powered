@@ -81,7 +81,6 @@ def main():
     except Exception as e:
         logger.error(f"Failed to get safety summary: {e}")
     
-    # Example 5: Generate a simple report
     logger.info("\n=== Example 5: Report Generation ===")
     try:
         # Create a mock test result for demonstration

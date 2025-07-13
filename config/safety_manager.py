@@ -49,7 +49,6 @@ class SafetyManager:
             self.logger.warning("Emergency stop active - authorization denied")
             return False
         
-        # Check if target is in authorized list
         if target in self.authorized_targets:
             self._log_audit_event("authorization_verified", target, "Target in authorized list")
             return True

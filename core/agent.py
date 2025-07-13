@@ -152,7 +152,6 @@ class PentestAgent:
         
         recon_results = self.recon_engine.run_comprehensive_recon(self.current_target)
         
-        # Update target with discovered information
         if recon_results.get("ip_address"):
             self.current_target.ip_address = recon_results["ip_address"]
         if recon_results.get("ports"):

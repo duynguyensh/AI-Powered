@@ -125,7 +125,6 @@ class PentestAgent:
             
             exploit_results = self._run_exploitation()
             
-            # Phase 4: Privilege Escalation
             privilege_results = self._run_privilege_escalation()
             
             # Compile results

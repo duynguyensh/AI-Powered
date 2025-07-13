@@ -123,7 +123,6 @@ class PentestAgent:
             
             vuln_results = self._run_vulnerability_scanning()
             
-            # Phase 3: Exploitation
             exploit_results = self._run_exploitation()
             
             # Phase 4: Privilege Escalation

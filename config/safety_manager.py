@@ -45,7 +45,6 @@ class SafetyManager:
         Returns:
             True if authorized, False otherwise
         """
-        # Check if emergency stop is active
         if self.emergency_stop_active:
             self.logger.warning("Emergency stop active - authorization denied")
             return False

@@ -315,7 +315,6 @@ class PentestAgent:
         """Emergency stop the current test"""
         logger.warning("Emergency stop initiated")
         
-        # Stop all running processes
         self.action_executor.stop_all_processes()
         
         # Save current state

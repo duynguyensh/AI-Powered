@@ -120,7 +120,6 @@ class SafetyManager:
         current_time = time.time()
         max_requests = self.safety_config.get("max_requests_per_minute", 60)
         
-        # Initialize counters if not present
         if target not in self.request_counts:
             self.request_counts[target] = 0
             self.last_request_time[target] = current_time

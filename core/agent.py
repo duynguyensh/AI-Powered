@@ -121,7 +121,6 @@ class PentestAgent:
         try:
             recon_results = self._run_reconnaissance()
             
-            # Phase 2: Vulnerability Assessment
             vuln_results = self._run_vulnerability_scanning()
             
             # Phase 3: Exploitation

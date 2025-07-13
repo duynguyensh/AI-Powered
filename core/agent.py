@@ -60,7 +60,6 @@ class PentestAgent:
         self.exploit_engine = ExploitEngine(self.config)
         self.privilege_escalation = PrivilegeEscalation(self.config)
         
-        # Initialize AI components
         self.rl_agent = RLAgent(self.config)
         self.strategy_optimizer = StrategyOptimizer(self.config)
         
